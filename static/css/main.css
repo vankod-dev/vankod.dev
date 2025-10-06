@@ -1,0 +1,76 @@
+:root {
+  /* hsl (fallback color) */
+  --color-bg-dark: hsl(218 46% 2%);
+  --color-bg: hsl(214 29% 5%);
+  --color-bg-light: hsl(214 17% 9%);
+  --color-text: hsl(214 100% 96%);
+  --color-text-muted: hsl(214 14% 70%);
+  --color-highlight: hsl(214 9% 40%);
+  --color-border: hsl(214 12% 29%);
+  --color-border-muted: hsl(214 18% 19%);
+  --color-primary: hsl(214 78% 73%);
+  --color-secondary: hsl(35 58% 62%);
+  --color-danger: hsl(9 26% 64%);
+  --color-warning: hsl(52 19% 57%);
+  --color-success: hsl(146 17% 59%);
+  --color-info: hsl(217 28% 65%);
+  /* oklch */
+  --color-bg-dark: oklch(0.1 0.01 255);
+  --color-bg: oklch(0.15 0.01 255);
+  --color-bg-light: oklch(0.2 0.01 255);
+  --color-text: oklch(0.96 0.02 255);
+  --color-text-muted: oklch(0.76 0.02 255);
+  --color-highlight: oklch(0.5 0.02 255);
+  --color-border: oklch(0.4 0.02 255);
+  --color-border-muted: oklch(0.3 0.02 255);
+  --color-primary: oklch(0.76 0.1 255);
+  --color-secondary: oklch(0.76 0.1 75);
+  --color-danger: oklch(0.7 0.05 30);
+  --color-warning: oklch(0.7 0.05 100);
+  --color-success: oklch(0.7 0.05 160);
+  --color-info: oklch(0.7 0.05 260);
+  --ff: sans-serif;
+  --p: 400 1rem/1em var(--ff);
+}
+body.light {
+  /* hsl (fallback color) */
+  --color-bg-dark: hsl(214 22% 90%);
+  --color-bg: hsl(214 47% 95%);
+  --color-bg-light: hsl(214 100% 100%);
+  --color-text: hsl(215 53% 5%);
+  --color-text-muted: hsl(214 12% 29%);
+  --color-highlight: hsl(214 100% 100%);
+  --color-border: hsl(214 8% 51%);
+  --color-border-muted: hsl(214 11% 63%);
+  --color-primary: hsl(213 62% 30%);
+  --color-secondary: hsl(40 100% 16%);
+  --color-danger: hsl(9 21% 41%);
+  --color-warning: hsl(52 23% 34%);
+  --color-success: hsl(147 19% 36%);
+  --color-info: hsl(217 22% 41%);
+  /* oklch */
+  --color-bg-dark: oklch(0.92 0.01 255);
+  --color-bg: oklch(0.96 0.01 255);
+  --color-bg-light: oklch(1 0.01 255);
+  --color-text: oklch(0.15 0.02 255);
+  --color-text-muted: oklch(0.4 0.02 255);
+  --color-highlight: oklch(1 0.02 255);
+  --color-border: oklch(0.6 0.02 255);
+  --color-border-muted: oklch(0.7 0.02 255);
+  --color-primary: oklch(0.4 0.1 255);
+  --color-secondary: oklch(0.4 0.1 75);
+  --color-danger: oklch(0.5 0.05 30);
+  --color-warning: oklch(0.5 0.05 100);
+  --color-success: oklch(0.5 0.05 160);
+  --color-info: oklch(0.5 0.05 260);
+}
+
+/* the styles */
+body {
+  margin: 0 auto;
+  width: 95%;
+  background: var(--color-bg-dark);
+  color: var(--color-text);
+  font-family: var(--ff);
+  font: var(--p);
+}

@@ -6,3 +6,8 @@ The minimalistic yet functional website, which will become a template (theme) fo
 ```shell
 hugo new site . --force
 ```
+
+## Color scheme
+[UI Colors](https://www.iamsajid.com/ui-colors/) with
+- Chroma `0.02` (neutral)
+- Hue `255` (cooler)

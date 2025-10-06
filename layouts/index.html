@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div role="main" class="container">
+    <div class="row">
+        <div class="">
+            {{ with .Content }}
+            <div class="">{{.}}</div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
