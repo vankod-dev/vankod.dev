@@ -1,0 +1,17 @@
+<div class="project-tile">
+  <a href="{{ .Params.github_url | default .Params.external_url }}" target="_blank" rel="noopener noreferrer">
+    <div class="project-pictogram">{{ .Params.pictogram }}</div>
+    <h3 class="project-title">{{ .Title }}</h3>
+    <p class="project-description">{{ .Description }}</p>
+    {{ if .Params.opinion }}
+    <div class="project-opinion">
+      <strong>My take:</strong>
+      <p>{{ .Params.opinion }}</p>
+    </div>
+    {{ end }}
+    <div class="project-links">
+      {{ if .Params.github_url }}<span class="link-icon">🔗 GitHub</span>{{ end }}
+      {{ if .Params.external_url }}<span class="link-icon">🌐 Website</span>{{ end }}
+    </div>
+  </a>
+</div>
