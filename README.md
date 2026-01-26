@@ -90,3 +90,18 @@ Open link in the same tab
 ```html
 <article class="thought-item" onclick="window.location.href='{{ .Permalink }}'">
 ```
+
+## Adding GitHub callouts or admonitions
+
+Great [video](https://www.youtube.com/watch?v=UhTtKF-ZkpQ) with all changes done for **Hugo** in the [repository](https://github.com/squidfingers/hugo-shortcodes).
+
+Not clear why official [instruction](https://gohugo.io/render-hooks/blockquotes/) did not work for me.
+
+With changes in [`hugo.toml`](hugo.toml)
+
+```toml
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+```
