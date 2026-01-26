@@ -4,3 +4,14 @@ title = 'vankod'
 
 [Params]
   favicon = "img/favicon.ico"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = 'monokai'
+    tabWidth = 2

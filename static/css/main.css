@@ -113,3 +113,123 @@ a:hover {
   font-size: 0.9rem;
   margin: 0;
 }
+
+/* Code block container */
+.highlight {
+  position: relative;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  background: #272822;
+  overflow: hidden;
+}
+
+/* Scrollable wrapper for line number table */
+.highlight .lntable {
+  overflow-x: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* Inner table structure */
+.highlight .lntable > tbody {
+  display: table;
+  width: max-content;
+  min-width: 100%;
+  border-spacing: 0;
+}
+
+.highlight .lntable tbody tr {
+  display: table-row;
+}
+
+.highlight .lntable td {
+  padding: 0;
+  vertical-align: top;
+  display: table-cell;
+}
+
+/* Line numbers column */
+.highlight .lntable td:first-child {
+  width: 1%;
+  padding: 1rem 0.5rem 1rem 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+}
+
+.highlight .lntable .lnt,
+.highlight .lntable .ln {
+  color: #6e7681;
+  user-select: none;
+  text-align: right;
+  display: block;
+  line-height: 1.6;
+}
+
+/* Code column */
+.highlight .lntable td:last-child {
+  width: 99%;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+/* Code block */
+.highlight pre {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  background: transparent;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.highlight code {
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  background: transparent;
+  white-space: pre;
+}
+
+/* Code without line numbers */
+.highlight:not(:has(.lntable)) pre {
+  padding: 1rem 1.5rem;
+}
+
+/* Copy button */
+.copy-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.highlight:hover .copy-button {
+  opacity: 1;
+}
+
+.copy-button:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.copy-button.copied {
+  background: var(--color-success);
+  border-color: var(--color-success);
+}
+
+/* Inline code */
+:not(pre) > code {
+  background: var(--color-bg-light);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 0.9em;
+}

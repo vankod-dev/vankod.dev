@@ -55,6 +55,30 @@ hugo new content/references/cool-tool.md
 hugo new content/thoughts/how-to-do-something.md
 ```
 
+## Adding code snippet highlight
+Add into [`hugo.toml`](hugo.toml)
+
+```toml
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = 'monokai'
+    tabWidth = 2
+```
+There are many [styles](https://xyproto.github.io/splash/docs/all.html): `monokai`, `github`, `dracula`, `nord`, `solarized-dark`, etc.
+Execute with desired.
+
+```shell
+hugo gen chromastyles --style=monokai > static/css/syntax.css
+```
+
+Add generated file where needed.
+
 ## Tips for the future
 
 Open link in new tab
