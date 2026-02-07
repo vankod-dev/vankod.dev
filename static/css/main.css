@@ -121,6 +121,8 @@ a:hover {
   border-radius: 8px;
   background: #272822;
   overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Scrollable wrapper for line number table */
@@ -179,6 +181,8 @@ a:hover {
   background: transparent;
   line-height: 1.6;
   white-space: pre;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .highlight code {
@@ -187,6 +191,8 @@ a:hover {
   line-height: 1.6;
   background: transparent;
   white-space: pre;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Code without line numbers */
